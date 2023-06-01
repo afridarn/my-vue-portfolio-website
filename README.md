@@ -9,7 +9,7 @@ This website is a website created to display my portfolio and work experience. T
 ## How to Access
 
 To access this website, please access the following link:
-https://my-vue-portfolio-website.vercel.app/
+https://afridarn-portfolio.vercel.app/
 
 ## Contact
 
