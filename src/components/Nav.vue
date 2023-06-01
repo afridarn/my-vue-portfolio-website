@@ -10,13 +10,18 @@
       <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
         <ul class="navbar-nav gap-5">
           <li class="nav-item">
-            <router-link to="/" class="nav-link text-light"> Home</router-link>
+            <router-link to="/" class="nav-link" :class="{ 'text-yellow': isActive('/'), 'text-light': !isActive('/') }">
+              Home</router-link>
+          </li>
+          <li class=" nav-item">
+            <router-link to="/projects" class="nav-link"
+              :class="{ 'text-yellow': isActive('/projects'), 'text-light': !isActive('/projects') }">
+              Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/projects" class="nav-link text-light"> Projects</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/contact" class="nav-link text-light"> Contact</router-link>
+            <router-link to="/contact" class="nav-link"
+              :class="{ 'text-yellow': isActive('/contact'), 'text-light': !isActive('/contact') }">
+              Contact</router-link>
           </li>
         </ul>
       </div>
@@ -33,5 +38,10 @@
 <script>
 export default {
   name: 'Nav',
+  methods: {
+    isActive(route) {
+      return this.$route.path === route;
+    },
+  },
 }
 </script>

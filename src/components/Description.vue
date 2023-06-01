@@ -7,7 +7,7 @@
         </h1>
         <p class="text-light fs-4">
           Hello, I'm <span class="text-yellow">Afrida Rohmatin N</span>,
-          <br />Currently studying Information Technology<br />at <span class="text-yellow">ITS Surabaya</span>
+          <br />Currently studying at Information Technology<br />at <span class="text-yellow">ITS Surabaya</span>
         </p>
         <RouterLink to="/contact">
           <button type="button" class="button-outline-yellow">Contact Me</button>
